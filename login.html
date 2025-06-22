@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 350px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; }
+        #message { margin-top: 10px; }
+        .logo { display: block; margin: 0 auto 20px auto; width:80px; height:80px; border-radius:50%; }
+        .back-btn {
+            width: 100%;
+            margin-top: 10px;
+            background: #218838;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm">
+            <img src="OIP.Webp" alt="Logo" class="logo">
+            <h2>Login</h2>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <div id="message"></div>
+        <button type="button" onclick="window.location.href='index.html'" class="back-btn">Back</button>
+        <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+            <span id="themeIcon">
+                <!-- Sun SVG by default -->
+                <svg id="sunIcon" width="26" height="26" viewBox="0 0 24 24" fill="#FFD600" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5"/>
+                    <g>
+                        <line x1="12" y1="1" x2="12" y2="3" stroke="#FFD600" stroke-width="2"/>
+                        <line x1="12" y1="21" x2="12" y2="23" stroke="#FFD600" stroke-width="2"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="#FFD600" stroke-width="2"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="#FFD600" stroke-width="2"/>
+                        <line x1="1" y1="12" x2="3" y2="12" stroke="#FFD600" stroke-width="2"/>
+                        <line x1="21" y1="12" x2="23" y2="12" stroke="#FFD600" stroke-width="2"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="#FFD600" stroke-width="2"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="#FFD600" stroke-width="2"/>
+                    </g>
+                </svg>
+            </span>
+        </button>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

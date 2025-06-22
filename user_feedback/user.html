@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Feedback - Gulmohar City</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <button class="back-btn" id="backBtn" title="Back">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#218838" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18l-6-6 6-6"/>
+        </svg>
+        Back
+    </button>
+    <div class="feedback-container">
+        <h1>User Feedback</h1>
+        <div class="feedback-loop" id="feedbackLoop">
+            <!-- Feedbacks will appear here -->
+        </div>
+        <form id="feedbackForm" class="feedback-form">
+            <h2>Share Your Feedback</h2>
+            <input type="text" id="userName" placeholder="Your Name" required>
+            <textarea id="userFeedback" placeholder="Your feedback..." required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    <div class="location-section">
+        <h2>Our Location</h2>
+        <!-- Replace with your actual location iframe or address from links.html -->
+        <iframe src="https://www.google.com/maps?q=Gulmohar+City+Karachi&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="contact-links">
+            <a href="tel:03111234567" class="help-btn">Helpline: 0311-1234567</a>
+            <a href="mailto:info@gulmoharcity.com" class="email-btn">info@gulmoharcity.com</a>
+        </div>
+    </div>
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top" class="scroll-top-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#218838" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5l-7 7h4v7h6v-7h4z"/>
+        </svg>
+    </button>
+    <script src="user.js"></script>
+</body>
+</html>

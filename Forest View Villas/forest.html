@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forest View Villas - Gulmohar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="forest.css">
+</head>
+<body>
+    <button class="back-btn" id="backBtn" title="Back">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#218838" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18l-6-6 6-6"/>
+        </svg>
+        Back
+    </button>
+    <div class="banner">
+        <img src="/picture_folder/picture_folder/gulmohar_banner.png" alt="Forest View Villas Banner" class="banner-img">
+    </div>
+    <div class="content">
+        <h1>Forest View Villas</h1>
+        <h2>Beyond Dreams, A Reality</h2>
+        <p>
+            At Gulmohar Villas, we believe in more than just creating homes; we are building a sustainable future. Our eco-friendly approach ensures that every residence is a sanctuary where luxury meets nature, providing a harmonious living experience. With lush green spaces, sustainable building practices, and energy-efficient solutions, Gulmohar Villas offers an unparalleled commitment to a healthier, greener lifestyle.
+        </p>
+        <h3>Why Choose Gulmohar Villas?</h3>
+        <ul>
+            <li><b>Luxury & Sustainability:</b> Our homes are crafted to offer the best of both worlds—luxurious living that nurtures the environment.</li>
+            <li><b>Green Living Spaces:</b> Experience life surrounded by serene landscapes, green oases, and the majestic Urban Forest, all designed to keep you connected to nature.</li>
+            <li><b>Comprehensive Amenities:</b> From world-class education at the Gulmohar Education System to premium healthcare services at the Gulmohar Health Hub, every aspect of your family’s well-being is taken care of.</li>
+        </ul>
+        <h3>Easy and Flexible Payment Schedule: 8-Year Plan</h3>
+        <p>
+            At Gulmohar Villas, we understand the importance of flexibility when it comes to making your dream home a reality. That’s why we offer an 8-year payment plan designed to make home ownership accessible and stress-free. Our payment schedule is split into two convenient phases:
+        </p>
+        <ul>
+            <li><b>4 years during construction:</b> Pay in easy installments as your home is being built, ensuring a manageable financial commitment.</li>
+            <li><b>4 years after possession:</b> Once you’ve moved into your home, continue with flexible payments over the next four years, allowing you to settle in without any financial strain.</li>
+        </ul>
+        <p>
+            This flexible payment plan offers the peace of mind and convenience you need, making the journey to owning a luxurious and eco-friendly home at Gulmohar Villas smooth and affordable.
+        </p>
+        <h3>A Holistic Lifestyle Awaits You</h3>
+        <p>
+            Gulmohar Forest View Villas isn’t just a home—it’s a lifestyle centered around sustainability, community, and well-being. With parks, a community mosque, state-of-the-art recreational facilities, and seamless connectivity, this is a place where you can thrive while staying connected to nature and your neighbors.
+        </p>
+        <h3>Discover Your Dream Home Today!</h3>
+        <p>
+            Step into a world where luxury and sustainability blend seamlessly at Gulmohar Villas. Embrace the future of living, right here.
+        </p>
+    </div>
+    <div class="form-section">
+        <h2>For Booking & Other Details</h2>
+        <form id="bookingForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="Pakistan">Pakistan</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div id="formMsg"></div>
+    </div>
+    <button id="scrollTopBtn" title="Go to top" class="scroll-top-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#218838" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5l-7 7h4v7h6v-7h4z"/>
+        </svg>
+    </button>
+    <script src="forest.js"></script>
+</body>
+</html>

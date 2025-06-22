@@ -1,0 +1,135 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(OIP.webp);
+    backdrop-filter: blur(8px);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+form {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(34, 139, 34, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    max-width: 350px;
+}
+
+h2 {
+    color: #228B22;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    align-self: flex-start;
+    color: #228B22;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1.1rem;
+    border: 1px solid #b2d8b2;
+    border-radius: 6px;
+    background: #f8fff8;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border: 1.5px solid #228B22;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    background: #228B22;
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="button"] {
+    background: #fff;
+    color: #228B22;
+    border: 1.5px solid #228B22;
+    margin-bottom: 0.2rem;
+}
+
+button:hover {
+    background: #176617;
+    color: #fff;
+}
+
+button[type="button"]:hover {
+    background: #e6f9e6;
+    color: #228B22;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    background: #fff;
+    border: 2px solid #218838;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background 0.2s, border 0.2s;
+}
+
+.theme-toggle:hover {
+    background: #218838;
+}
+
+.theme-toggle svg {
+    display: block;
+}
+
+body.night-mode {
+    background: #181c1f !important;
+    color: #f1f1f1 !important;
+}
+
+body.night-mode .container,
+body.night-mode .sidebar,
+body.night-mode .main-content {
+    background: #23272b !important;
+    color: #f1f1f1 !important;
+}
+
+body.night-mode .sidebar-bottom-icons .social-icon,
+body.night-mode .theme-toggle {
+    background: #23272b !important;
+    border-color: #FFD600 !important;
+}
+
+.night-mode .karachi-animate {
+    color: #fff !important;
+    text-shadow: none !important;
+    filter: none !important;
+    background: none !important;
+    transition: color 0.3s;
+}

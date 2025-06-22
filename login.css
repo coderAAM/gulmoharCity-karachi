@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* Popular way: no-repeat, cover, center */
+    background: url(gulmohar.webp) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.body-blur {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
+    margin: 60px auto;
+    padding: 30px 25px 20px 25px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(34,139,34,0.15);
+}
+
+h2 {
+    text-align: center;
+    color: #218838;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #155724;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1.5px solid #218838;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #f8fff8;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #218838;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #155724;
+}
+
+#message {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #218838;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    background: #fff;
+    border: 2px solid #218838;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background 0.2s, border 0.2s;
+}
+.theme-toggle:hover {
+    background: #218838;
+}
+.theme-toggle svg {
+    display: block;
+}
+body.night-mode {
+    background: #181c1f !important;
+    color: #f1f1f1 !important;
+}
+body.night-mode .container,
+body.night-mode .sidebar,
+body.night-mode .main-content {
+    background: #23272b !important;
+    color: #f1f1f1 !important;
+}
+body.night-mode .sidebar-bottom-icons .social-icon,
+body.night-mode .theme-toggle {
+    background: #23272b !important;
+    border-color: #FFD600 !important;
+}
+.night-mode .karachi-animate {
+    color: #fff !important;
+    text-shadow: none !important;
+    filter: none !important;
+    background: none !important;
+    transition: color 0.3s;
+}
+
